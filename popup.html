@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Saver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+
+    <div id="prompt-list" class="draggable-list"></div>
+  </div>
+
+  <div id="delete-confirmation" class="confirmation">
+    <p>Delete?</p>
+    <div class="button-container">
+      <button id="confirm-no">No</button>
+      <button id="confirm-yes">Yes</button>
+    </div>
+  </div>
+
+
+    <div class="header">Save Your Prompts</div>
+
+    <button id="add-btn" class="add-btn">Add (+)</button>
+
+    <div id="input-box" class="input-box">
+      <input type="text" id="prompt-name" placeholder="Prompt Name" />
+      <textarea id="prompt-text" placeholder="Prompt Text"></textarea>
+      <button id="save-btn">Save</button>
+    </div>
+
+<div class="backup-section">
+  <button id="export-btn">📤 Export Prompts</button>
+  <input type="file" id="import-file" accept=".json" hidden />
+  <button id="import-btn">📥 Import Prompts</button>
+</div>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>

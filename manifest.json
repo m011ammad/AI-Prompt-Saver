@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AI Prompt Saver",
+  "version": "3.0",
+  "description": "Save, edit, and copy your AI prompts easily.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["storage", "clipboardWrite"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

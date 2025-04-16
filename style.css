@@ -1,0 +1,212 @@
+body {
+  background: #f0f0f0;
+  font-family: Vazir, Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  width: 384px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.input-box {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+    margin: 5px;
+}
+
+textarea {
+  height: 110px;
+}
+
+button {
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#save-btn {
+  margin: 5px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 0.5s ease;
+}
+
+.add-btn:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+
+.prompt-box {
+  background: white;
+  border: 1px solid #cce7ff;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: default;
+}
+
+.prompt-box:hover {
+  background-color: #e6f2ff;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #4da6ff;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: #cce7ff;
+}
+
+.icon-btn .tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+#prompt-list {
+  margin-top: 20px;
+}
+
+.confirmation {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 999;
+}
+
+.confirmation button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmation .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.prompt-box[draggable="true"] {
+  cursor: grab;
+}
+.prompt-box[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+
+.backup-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#export-btn,
+#import-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#export-btn:hover,
+#import-btn:hover {
+  background-color: #555;
+}
+
